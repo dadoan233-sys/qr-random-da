@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <title>Random QR Văn Đà</title>
   <script>
-    const links = [
+    const items = [
       "https://www.facebook.com/61581958006838",
       "https://www.google.com/maps/search/?api=1&query=Mì%20cay%20Yagami%20An%20Tây%20Ẩm%20thực%20Lẩu%20Thái%20Nhật%20Hàn",
-      "thanks1.html",
-      "thanks2.html"
+      "./thanks1.html",
+      "./thanks2.html"
     ];
+
     window.onload = function () {
-      const r = Math.floor(Math.random() * links.length);
-      window.location.href = links[r];
+      const r = Math.floor(Math.random() * items.length);
+      window.location.replace(items[r]);
     };
   </script>
 </head>
